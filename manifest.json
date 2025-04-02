@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Focus Mode Blocker",
+    "version": "1.0",
+    "description": "Blocks social media websites to help you stay focused.",
+    "permissions": [
+      "declarativeNetRequest",
+      "declarativeNetRequestWithHostAccess"
+    ],
+    "host_permissions": [
+      "*://*.facebook.com/*",
+      "*://*.twitter.com/*",
+      "*://*.instagram.com/*",
+      "*://*.tiktok.com/*",
+      "*://*.linkedin.com/*"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "icons": {
+      "16": "meme.png",
+      "48": "meme.png",
+      "128": "meme.png"
+    }
+  }
